@@ -1,0 +1,572 @@
+
+body {
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    min-width: 390px;
+    width: 99%;
+    height: 99%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color:snow;
+}
+
+#img_container {
+    background-color: whitesmoke;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-top-width: 2px;
+    border-top-color: black;
+    border-right-width: 2px;
+    border-right-color: black;
+    border-left-width: 2px;
+    border-left-color: black;
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex !important;
+}
+
+#img_container > h3 {
+    color: black;
+    width: fit-content;
+    font-family:cursive;
+}
+
+img.logo {
+    display: block;
+    margin-left: 97px;
+    margin-right: 0;
+    margin-top:10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#current_user_name {
+    color: black;
+    font-family: cursive;
+    background-color: whitesmoke;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: cursive;
+    color: black;
+}
+
+.newInput {
+    text-align: center;
+    margin: 3px;
+}
+
+    .newInput > input {
+        font-family:cursive;
+        text-align: center;
+        border-color: grey;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        color: black;
+        display: inline-block;
+        padding: 3px;
+        width: 70px;
+        height: 10px;
+        font-size: 12px;
+        margin-left: 3px auto;
+        margin-right: 3px;
+    }
+    .newInput > input[type=text]{
+        background-color: alcieblue;
+    }
+
+        .newInput > input[type=button] {
+            text-align: center;
+            border-color: grey;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-radius: 5px;
+            color: black;
+            box-shadow: -2px 2px #999;
+            display: inline-block;
+            padding-right: 34px;
+            padding-bottom: 19px;
+            width: 35px;
+            height: 20px;
+            font-size: 12px;
+            margin-left: 3px auto;
+            margin-right: 3px;
+            cursor: initial;
+        }
+
+            .newInput > input[type=button]:hover {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                cursor: pointer;
+                color: aliceblue;
+            }
+
+            .newInput > input[type=button]:active {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                box-shadow: none;
+                transform: translate(-2px, 2px);
+                color: aliceblue;
+            }
+
+        .newInput > input[name = "startclicked"] {
+            text-align: center;
+            border-color: grey;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-radius: 5px;
+            color: aliceblue;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            transform: translate(-2px, 2px);
+            box-shadow: none;
+            display: inline-block;
+            padding-right: 34px;
+            padding-bottom: 19px;
+            width: 35px;
+            height: 20px;
+            font-size: 12px;
+            margin-left: 3px auto;
+            margin-right: 3px;
+            cursor: initial;
+        }
+
+            .newInput > input[type=button]:hover {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                cursor: pointer;
+                color: aliceblue;
+            }
+
+            .newInput > input[type=button]:active {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                box-shadow: none;
+                transform: translate(-2px, 2px);
+                color: aliceblue;
+            }
+
+
+
+        .newInput > input[value="current"] {
+            text-align: center;
+            color: black;
+            display: inline-block;
+            padding: 3px;
+            padding-bottom: 19px;
+            width: 55px;
+            height: 20px;
+            font-size: 12px;
+            margin-left: 3px auto;
+            margin-right: 3px;
+        }
+
+        .newInput > input[maxlength="2"] {
+            width: 15px;
+            height: 10px;
+        }
+
+.timeButton {
+    text-align: right;
+}
+
+.descClass {
+    margin-top: 8px;
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.8);
+    padding-left: 3px;
+    padding-right: 3px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-radius: 5px;
+    left: 10px;
+    font-size: 14px;
+    font-family: cursive;
+    color: black;
+    cursor: pointer;
+}
+
+    .descClass p {
+        text-align: center;
+        display: none;
+    }
+
+    .descClass:hover p {
+        background-color: rgba(255, 255, 255, 0.8);
+        display: inline-block;
+    }
+
+    .descClass:hover span {
+        display: none;
+    }
+
+.timeButton > .descClass, input, .LDdiv {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.timeButton > input[type=button] {
+    font-family: cursive;
+    border-color: grey;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-radius: 5px;
+    color: black;
+    box-shadow: -2px 2px #999;
+    text-align: center;
+    padding-right: 60px;
+    padding-bottom: 19px;
+    width: 65px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: initial;
+}
+
+    .timeButton > input[type=button]:hover {
+        background-image: linear-gradient(to bottom, grey, dimgrey);
+        cursor: pointer;
+        color: aliceblue;
+    }
+
+    .timeButton > input[type=button]:active {
+        background-image: linear-gradient(to bottom, grey, dimgrey);
+        box-shadow: none;
+        transform: translate(-2px, 2px);
+        color: aliceblue;
+    }
+
+.timeButton > input[value=start] {
+    text-align: center;
+    box-shadow: -2px 2px #999;
+    color: black;
+    display: inline-block;
+    padding-right: 35px;
+    padding-bottom: 19px;
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 3px auto;
+    margin-right: 3px;
+    cursor: initial;
+}
+
+    .timeButton > input[value=start]:hover {
+        background-image: linear-gradient(to bottom, grey, dimgrey);
+        cursor: pointer;
+        color: aliceblue;
+    }
+
+    .timeButton > input[value=start]:active {
+        text-align: center;
+        background-image: linear-gradient(to bottom, grey, dimgrey);
+        box-shadow: none;
+        transform: translate(-2px, 2px);
+        color: aliceblue;
+    }
+.timeButton > input[name = startclicked] {
+    text-align: center;
+    background-image: linear-gradient(to bottom, grey, dimgrey);
+    box-shadow: none;
+    transform: translate(-2px, 2px);
+    color: aliceblue;
+    display: inline-block;
+    padding-right: 35px;
+    padding-bottom: 19px;
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 3px auto;
+    margin-right: 3px;
+    cursor: initial;
+}
+
+
+.start {
+    text-align: center;
+}
+
+    .start > input[id="changeStart"] {
+        font-family: cursive;
+        border-color: grey;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        color: black;
+        box-shadow: -2px 2px #999;
+        padding-right: 139px;
+        padding-bottom: 19px;
+        width: 140px;
+        height: 20px;
+        text-align: center;
+        margin-right: 20px;
+        cursor: initial;
+    }
+
+        .start > input[id="changeStart"]:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            color: aliceblue;
+        }
+
+        .start > input[id="changeStart"]:active {
+            text-align: center;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            box-shadow: none;
+            transform: translate(-2px, 2px);
+            color: aliceblue;
+        }
+
+.Time {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+    .Time > input[id="addTime"] {
+        font-family: cursive;
+        border-color: grey;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        color: black;
+        box-shadow: -2px 2px #999;
+        cursor: initial;
+        padding-right: 44px;
+        padding-bottom: 19px;
+        width: 45px;
+        height: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+        .Time > input[id="addTime"]:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            color: aliceblue;
+        }
+
+        .Time > input[id="addTime"]:active {
+            text-align: center;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            box-shadow: none;
+            transform: translate(-2px, 2px);
+            color: aliceblue;
+        }
+
+    .Time > input[type = "submit"] {
+        font-family: cursive;
+        border-color: grey;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        color: black;
+        box-shadow: -2px 2px #999;
+        cursor: initial;
+        width: 70px;
+        height: 25px;
+        margin-right: 20px;
+        margin: 5px auto;
+        display: none;
+    }
+
+        .Time > input[type = "submit"]:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            color: aliceblue;
+        }
+
+    .Time > input[type = "submit"]:active {
+        text-align: center;
+        background-image: linear-gradient(to bottom, grey, dimgrey);
+        box-shadow: none;
+        transform: translate(-2px, 2px);
+        color: aliceblue;
+    }
+
+
+.LDdiv {
+    text-align: right;
+}
+
+    .LDdiv > input, h5 {
+        color: black;
+        font-family: cursive;
+        display: inline-block;
+        background-color: aliceblue;
+        border-radius: 5px;
+    }
+
+        .LDdiv > input[value="1"], input[value="2"] {
+            background-image: url(/images/like2.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            transform: translate(2px, 2px);
+            border: none;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+        }
+
+            .LDdiv > input[value="1"]:hover , input[value="2"]:hover {
+                background-image: url(/images/likeclicked2.png);
+            }
+
+
+        .LDdiv > input[value="-1"], input[value="-2"] {
+            background-image: url(/images/dislike2.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            border: none;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+        }
+        .LDdiv > input[value="-1"]:hover , input[value="-2"]:hover {
+            background-image: url(/images/dislikeclicked2.png);
+        }
+            .userButtons {
+    text-align: center;
+}
+
+    .userButtons > input[type="button"] {
+        margin-bottom: 10px;
+        font-family: cursive;
+        border-color: grey;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        box-shadow: -2px 2px #999;
+        display: inline-block;
+        text-align: center;
+        color: black;
+        padding-bottom: 19px;
+        width: 100px;
+        height: 20px;
+        cursor: initial;
+    }
+
+        .userButtons > input[type="button"]:hover {
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            cursor: pointer;
+            color: aliceblue;
+        }
+
+        .userButtons > input[type="button"]:active {
+            background-image: linear-gradient(to bottom, grey, dimgrey);
+            box-shadow: none;
+            transform: translate(-2px, 2px);
+            color: aliceblue;
+        }
+
+
+.userInfo {
+    display: none;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 100%;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: black;
+}
+
+    .userInfo > input, h4 {
+        font-family: cursive;
+        display: inline-block;
+        text-align: center;
+        margin-left: 2px;
+    }
+    .userInfo > h4 {
+        width: 71px;
+    }
+
+        .userInfo > input[type="text"] {
+            font-family: cursive;
+            border-color: grey;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-radius: 5px;
+            background-color: aliceblue;
+            display: none;
+            color: black;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+        }
+
+        .userInfo > input[type="button"] {
+            font-family: cursive;
+            border-color: grey;
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+            box-shadow: -2px 2px #999;
+            cursor: initial;
+            color: black;
+            padding-bottom: 22px;
+            width: 60px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+            .userInfo > input[type="button"]:hover {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                cursor: pointer;
+                color: aliceblue;
+            }
+
+            .userInfo > input[type="button"]:active {
+                background-image: linear-gradient(to bottom, grey, dimgrey);
+                box-shadow: none;
+                transform: translate(-2px, 2px);
+                color: aliceblue;
+            }

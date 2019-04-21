@@ -1,0 +1,45 @@
+{
+  "name": "youJump",
+  "version": "1.0",
+  "description": "youtube timing extension",
+  "permissions": [
+    "declarativeContent",
+    "webNavigation",
+    "storage",
+    "webRequestBlocking",
+    "webRequest",
+    "activeTab",
+    "tabs",
+    "http://*/",
+    "https://*/",
+    "https://www.youtube.com/*",
+    "file:///*/"
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://www.youtube.com/*" ],
+      "run_at":  "document_start",
+      "js": [ "content.js" ]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/YJ_16.png",
+      "32": "images/YJ_32.png",
+      "48": "images/YJ_48.png",
+      "128": "images/YJ_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/YJ_16.png",
+    "32": "images/YJ_32.png",
+    "48": "images/YJ_48.png",
+    "128": "images/YJ_128.png"
+  },
+  "manifest_version": 2
+}
